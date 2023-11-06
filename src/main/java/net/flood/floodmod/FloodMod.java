@@ -1,6 +1,7 @@
 package net.flood.floodmod;
 
 import com.mojang.logging.LogUtils;
+import net.flood.floodmod.item.Moditems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -43,6 +44,8 @@ public class FloodMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        Moditems.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -61,6 +64,9 @@ public class FloodMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(Moditems.DEBUGSQUARE);
+        }
 
     }
 
