@@ -12,7 +12,7 @@ public class Moditems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FloodMod.MODID);
 
-    public static final RegistryObject<Item> DEBUGSQUARE = ITEMS.register("Debugsquare",
+    public static final RegistryObject<Item> DEBUGSQUARE = ITEMS.register("debugsquare",
             () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
