@@ -50,7 +50,7 @@ public class FloodMod
         MinecraftForge.EVENT_BUS.register(this);
 
         // Register the item to a creative tab
-        //modEventBus.addListener(this::addCreative);
+        modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
