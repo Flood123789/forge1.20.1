@@ -4,5 +4,6 @@
   "item.flood_123_test.testsword": "test sword",
 
 //blocks
-  "block.flood_123_test.debug_block": "Block of debug"
+  "block.flood_123_test.debug_block": "Block of debug",
+  "block.flood_123_test.fabric_block": "Fabric Block"
 }

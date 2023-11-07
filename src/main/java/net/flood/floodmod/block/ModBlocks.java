@@ -20,7 +20,9 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, FloodMod.MODID);
 
     public static final RegistryObject<Block> DEBUG_BLOCK = registerBlock("debug_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> FABRIC_BLOCK =registerBlock("fabric_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.2f)));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
