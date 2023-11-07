@@ -1,6 +1,7 @@
 package net.flood.floodmod;
 
 import com.mojang.logging.LogUtils;
+import net.flood.floodmod.block.ModBlocks;
 import net.flood.floodmod.item.Moditems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -44,7 +45,9 @@ public class FloodMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        //register Items & Blocks
         Moditems.register(modEventBus);
+        ModBlocks.register((modEventBus));
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -66,6 +69,14 @@ public class FloodMod
     {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(Moditems.DEBUGSQUARE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept((Moditems.TESTSWORD));
+        }
+
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.DEBUG_BLOCK.get());
         }
 
     }

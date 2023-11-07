@@ -1,3 +1,8 @@
 {
-  "item.flood_123_test.debugsquare": "debug"
+  //items
+  "item.flood_123_test.debugsquare": "debug",
+  "item.flood_123_test.testsword": "test sword",
+
+//blocks
+  "block.flood_123_test.debug_block": "Block of debug"
 }
