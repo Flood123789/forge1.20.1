@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flood_123_test:debug_block"
+    }
+  ],
+  "result": {
+    "item": "flood_123_test:debugsquare",
+    "count": 9
+  }
+}

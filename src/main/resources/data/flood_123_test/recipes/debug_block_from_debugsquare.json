@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "flood_123_test:debugsquare"
+    }
+  },
+  "result": {
+    "item": "flood_123_test:debug_block"
+  }
+}
