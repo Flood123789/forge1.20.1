@@ -5,5 +5,7 @@
 
 //blocks
   "block.flood_123_test.debug_block": "Block of debug",
-  "block.flood_123_test.fabric_block": "Fabric Block"
+  "block.flood_123_test.fabric_block": "Fabric Block",
+
+  "creativetab.tutorial_tab": "Debugging Tab"
 }

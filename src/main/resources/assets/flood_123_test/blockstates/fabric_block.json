@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "flood_123_test:block/debug_block"
+      "model": "flood_123_test:block/fabric_block"
     }
   }
 }
